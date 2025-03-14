@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.graybg {
+.cardBg {
     background-color: #E5E7EB;
     border-radius: 5px;
     width: 160px;

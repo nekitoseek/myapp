@@ -1,3 +1,11 @@
+body {
+  background-color: #F6F6F6;
+  width: 428px;
+  height: 926px;
+  border-radius: 40px;
+  font-family: "Inder", sans-serif;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -21,6 +29,7 @@ a {
 a:hover {
   color: #535bf2;
 }
+
 
 body {
   margin: 0;

@@ -1,0 +1,22 @@
+.search {
+    position: relative;
+    width: 372px;
+    height: 59px;
+}
+
+.search-ipt {
+    width: 372px;
+    height: 59px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding-left: 40px;
+    font-weight: 400;
+}
+
+.search-icn {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 13px;
+    height: 13px;
+}

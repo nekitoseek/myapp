@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import ProductCard from './components/ProductCard/ProductCard';
+import Header from './components/Header/Header';
+import Menu from './components/Menu/Menu';
 
 function App() {
   return (
-    <ProductCard name="латте"/>
+    <>
+    <Header />
+    <Menu />
+    </>
   )
 }
 

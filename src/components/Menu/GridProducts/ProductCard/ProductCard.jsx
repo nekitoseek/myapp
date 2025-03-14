@@ -16,7 +16,7 @@ const ProductCard = ({ name }) => {
     
     return(
         <div>
-            <div className="graybg"></div>
+            <div className="cardBg"></div>
             <div>
                 <span>{name}</span>
                 {count === 0 ? (
