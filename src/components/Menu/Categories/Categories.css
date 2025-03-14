@@ -1,0 +1,9 @@
+.categories {
+    width: 372px;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}

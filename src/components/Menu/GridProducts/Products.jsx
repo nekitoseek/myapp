@@ -4,7 +4,9 @@ import ProductCard from './ProductCard/ProductCard';
 const Products = () => {
     return(
         <>
-        <ProductCard name='латте' />
+        <ProductCard name='Латте' />
+        <ProductCard name='Латте' />
+        <ProductCard name='Латте' />
         </>
     );
 };

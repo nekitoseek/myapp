@@ -1,8 +1,31 @@
 @import "tailwindcss";
 
-.cardBg {
+.card {
+    width: 176px;
+    height: 214px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 8px;
+
+
+    margin: 50px 50px;
+}
+
+.card-dscrptn {
+    width: 160px;
+    height: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-name {
+    font-size: 16px;
+}
+
+.placeforimg {
     background-color: #E5E7EB;
-    border-radius: 5px;
+    border-radius: 12px;
     width: 160px;
     height: 155px;
+    
 }
