@@ -1,0 +1,13 @@
+.menu-container {
+    width: 372px;
+    margin: 0 28px;
+}
+
+.menu-h1 {
+    width: 372px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 18px;
+}

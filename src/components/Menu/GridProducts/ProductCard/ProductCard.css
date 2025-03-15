@@ -6,9 +6,6 @@
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 8px;
-
-
-    margin: 50px 50px;
 }
 
 .card-dscrptn {
@@ -16,10 +13,12 @@
     height: 31px;
     display: flex;
     justify-content: space-between;
+    margin-top: 12px;
 }
 
 .card-name {
     font-size: 16px;
+
 }
 
 .placeforimg {
@@ -27,5 +26,49 @@
     border-radius: 12px;
     width: 160px;
     height: 155px;
-    
+}
+
+.kol-panel {
+    width: 71px;
+    height: 29px;
+    display: flex;
+    background-color: #364C84;
+    color: #FFFFFF;
+    border-radius: 22.58px;
+}
+
+.zero-kol {
+
+}
+
+.plus-btn {
+    background-color: #364C84;
+    border-radius: 20px;
+    width: 31px;
+    height: 31px;
+
+}
+
+.plus-img {
+    width: 17px;
+    height: 17px;
+    margin: auto;
+}
+
+.count {
+    margin: auto;
+}
+
+.plus-minus-img {
+    margin: auto;
+    width: 10px;
+    height: 10px;
+}
+
+.plus-minus-btn {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 22.58px;
 }

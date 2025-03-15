@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ProductCard.css";
 import IconPlus from '../../../../images/iconPlus.svg';
 import IconMinus from '../../../../images/iconMinus.svg';
+import IconPlusB from '../../../../images/iconPlusBig.svg'
 
 const ProductCard = ({ name }) => {
     const [count, setCount] = useState(0);
@@ -21,19 +22,19 @@ const ProductCard = ({ name }) => {
             <div className="placeforimg"></div>
             <div className="card-dscrptn">
                 <div className="card-name">{name}</div>
-                <div>
+                <div className="">
                     {count === 0 ? (
-                        <button onClick={countIncrease}>
-                            <img src={IconPlus} />
+                        <button onClick={countIncrease} className="plus-btn" >
+                            <img src={IconPlusB} className="plus-img" />
                         </button>
                     ) : (
-                        <div>
-                            <button onClick={countDecrease}>
-                                <img src={IconMinus} />
+                        <div className="kol-panel">
+                            <button onClick={countDecrease} className="plus-minus-btn" >
+                                <img src={IconMinus} className="plus-minus-img" />
                             </button>
-                            <span>{count}</span>
-                            <button onClick={countIncrease}>
-                            <img src={IconPlus} />
+                            <div className="count">{count}</div>
+                            <button onClick={countIncrease} className="plus-minus-btn" >
+                            <img src={IconPlus} className="plus-minus-img" />
                             </button>
                         </div>
                     )}
