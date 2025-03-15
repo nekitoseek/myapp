@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+// import './MenuPage.css';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 
-function App() {
+function MenuPage() {
   return (
     <>
     <Header />
@@ -12,4 +12,4 @@ function App() {
   )
 }
 
-export default App;
+export default MenuPage;
