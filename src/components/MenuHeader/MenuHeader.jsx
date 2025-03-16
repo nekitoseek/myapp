@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Header.css';
+import './MenuHeader.css';
 import TableProfile from "./TableProfile/TableProfile";
 import CartButton from "./CartButton/CartButton";
 
-const Header = () => {
+const MenuHeader = () => {
     return(
         <>
         <div className="fullheader">
@@ -19,4 +19,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default MenuHeader;
