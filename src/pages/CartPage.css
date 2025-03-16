@@ -1,0 +1,22 @@
+.back-and-profile {
+    width: 341px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    margin-left: 42px;
+    margin-right: 45px;
+    margin-bottom: 54px;
+}
+
+.list-products {
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 54px;
+}
+
+.btnincart {
+    margin-bottom: 54px;
+    margin-left: 28px;
+    margin-right: 28px;
+}

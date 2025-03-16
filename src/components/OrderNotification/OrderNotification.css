@@ -1,0 +1,51 @@
+/* Затемнение и блюр фона */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 428px;
+    height: 926px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Уведомление */
+.modalwindow {
+    background-color: #FFFFFF;
+    border: 2px;
+    border-color: #B8B8B89E;
+    width: 320px;
+    height: 320px;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+/* Текст */
+.modalwindow span {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Контейнер для иконки */
+.checkmark {
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Картинка галочки */
+.checkmark img {
+    /* width: 100px;
+    height: 100px; */
+}

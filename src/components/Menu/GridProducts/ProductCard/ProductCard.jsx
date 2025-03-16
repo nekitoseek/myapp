@@ -22,7 +22,7 @@ const ProductCard = ({ name }) => {
             <div className="placeforimg"></div>
             <div className="card-dscrptn">
                 <div className="card-name">{name}</div>
-                <div className="">
+                <div>
                     {count === 0 ? (
                         <button onClick={countIncrease} className="plus-btn" >
                             <img src={IconPlusB} className="plus-img" />
@@ -34,7 +34,7 @@ const ProductCard = ({ name }) => {
                             </button>
                             <div className="count">{count}</div>
                             <button onClick={countIncrease} className="plus-minus-btn" >
-                            <img src={IconPlus} className="plus-minus-img" />
+                                <img src={IconPlus} className="plus-minus-img" />
                             </button>
                         </div>
                     )}

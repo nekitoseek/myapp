@@ -1,0 +1,29 @@
+.cardincart {
+    width: 346px;
+    height: 120px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-elements {
+    width: 329px;
+    height: 80px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.gray-sqare {
+    width: 84px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #E5E7EB;
+}
+
+.card-name-and-description {
+    width: 142px;
+    height: 41px;
+}

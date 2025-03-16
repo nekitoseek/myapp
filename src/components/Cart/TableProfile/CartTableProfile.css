@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+.tableProfile-icon {
+    display: flex;
+    background-color: #9DB2CE;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableProfile-icon-img {
+    width: 24px;
+    height: 24px;
+}
+
+.tableProfile-text {
+    width: auto;
+    font-family: "Inder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 24px;
+    margin-left: 6px;
+}
+
+.TP-btn {
+    display: flex;
+    width: 145px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    color: #202226;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
