@@ -3,7 +3,7 @@ import './Cards.css';
 import IconMinus from '../../../images/iconMinus.svg';
 import IconPlus from '../../../images/iconPlus.svg';
 
-const Card = () => {
+export default function Card() {
     return(
     <>
     <div className="cardincart">
@@ -28,5 +28,3 @@ const Card = () => {
     </>
     );
 };
-
-export default Card;

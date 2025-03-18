@@ -2,7 +2,7 @@ import React from "react";
 import './TableProfile.css';
 import UserIcon from '../../../images/UserIcon.svg'
 
-const TableProfile = ({ tableNumber }) => {
+export default function TableProfile({ tableNumber }) {
     return (
         <>
         <button className="table-btn shadow-xl">
@@ -16,5 +16,3 @@ const TableProfile = ({ tableNumber }) => {
         </>
     );
 };
-
-export default TableProfile;

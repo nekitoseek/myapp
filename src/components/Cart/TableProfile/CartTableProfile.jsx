@@ -2,7 +2,7 @@ import React from "react";
 import './CartTableProfile.css';
 import UserIcon from '../../../images/UserIcon.svg';
 
-const CartTableProfile = () => {
+export default function CartTableProfile() {
     return(
         <>
         <button className="TP-btn">
@@ -14,5 +14,3 @@ const CartTableProfile = () => {
         </>
     );
 };
-
-export default CartTableProfile;

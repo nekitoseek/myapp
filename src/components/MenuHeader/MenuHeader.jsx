@@ -4,7 +4,7 @@ import './MenuHeader.css';
 import TableProfile from "./TableProfile/TableProfile";
 import CartButton from "./CartButton/CartButton";
 
-const MenuHeader = () => {
+export default function MenuHeader() {
     return(
         <>
         <div className="fullheader">
@@ -18,5 +18,3 @@ const MenuHeader = () => {
         </>
     );
 };
-
-export default MenuHeader;

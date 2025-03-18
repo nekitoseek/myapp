@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from './ProductCard/ProductCard';
 import './Products.css'
 
-const Products = () => {
+export default function Products() {
     return(
         <>
         <div className="products-container">
@@ -16,5 +16,3 @@ const Products = () => {
         </>
     );
 };
-
-export default Products;

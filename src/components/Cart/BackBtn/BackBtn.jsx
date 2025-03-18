@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './BackBtn.css';
 import BackIcon from '../../../images/backIcon.svg';
 
-const BackBtn = () => {
+export default function BackBtn() {
     return(
         <>
         <Link to='/' className="back-btn">
@@ -14,5 +14,3 @@ const BackBtn = () => {
         </>
     );
 };
-
-export default BackBtn;

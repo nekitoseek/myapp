@@ -4,7 +4,7 @@ import Search from './Search/Search';
 import Categories from './Categories/Categories';
 import Products from './GridProducts/Products';
 
-function Menu() {
+export default function Menu() {
     return(
         <>
         <div className="menu-container">
@@ -16,5 +16,3 @@ function Menu() {
         </>
     );
 };
-
-export default Menu;

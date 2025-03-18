@@ -7,7 +7,7 @@ import CartList from '../components/Cart/CartList';
 import BuyBtn from '../components/Cart/BuyBtn/BuyBtn';
 import OrderNotification from "../components/OrderNotification/OrderNotification";
 
-const CartPage = () => {
+export default function CartPage() {
     const[isNotificationVisible, setNotificationVisible] = useState(false);
 
     const handleOrder = () => {
@@ -30,5 +30,3 @@ const CartPage = () => {
         </>
     );
 };
-
-export default CartPage;

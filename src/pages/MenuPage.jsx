@@ -3,13 +3,11 @@ import React from 'react';
 import MenuHeader from '../components/MenuHeader/MenuHeader';
 import Menu from '../components/Menu/Menu';
 
-function MenuPage() {
+export default function MenuPage() {
   return (
     <>
     <MenuHeader />
     <Menu />
     </>
   )
-}
-
-export default MenuPage;
+};

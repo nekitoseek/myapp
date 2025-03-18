@@ -2,7 +2,7 @@ import React from "react";
 import './CartButton.css';
 import cartIcon from '../../../images/cartIcon.svg'
 
-const CartButton = () => {
+export default function CartButton() {
     return(
         <>
             <button className="cart-btn shadow-xl">
@@ -10,6 +10,4 @@ const CartButton = () => {
             </button>
         </>
     );
-}
-
-export default CartButton;
+};

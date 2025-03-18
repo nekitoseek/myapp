@@ -2,7 +2,7 @@ import React from "react";
 import searchIcon from '../../../images/search.svg'
 import './Search.css';
 
-const Search = () => {
+export default function Search() {
     return(
         <>
         <div className="search">
@@ -12,5 +12,3 @@ const Search = () => {
         </>
     );
 };
-
-export default Search;

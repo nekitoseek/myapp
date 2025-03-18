@@ -1,7 +1,7 @@
 import React from "react";
 import './BuyBtn.css';
 
-const BuyBtn = ( {onClick} ) => {
+export default function BuyBtn( {onClick} ) {
     return(
         <>
         <button className="buy-btn" onClick={onClick}>
@@ -10,5 +10,3 @@ const BuyBtn = ( {onClick} ) => {
         </>
     );
 };
-
-export default BuyBtn;

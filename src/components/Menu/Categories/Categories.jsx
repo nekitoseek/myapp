@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Categories.css'
 import CategoryBtn from './CategoryBtn/CategoryBtn';
 
-const Categories = () => {
+export default function Categories() {
     const [activeCategory, setActiveCategory] = useState("Все");
     const categories = ["Все", "Кофе", "Чай", "Газ. напитки", "Коктейли", "Алкоголь"];
     return(
@@ -19,6 +19,4 @@ const Categories = () => {
         </div>
         </>
     );
-}
-
-export default Categories;
+};

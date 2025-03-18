@@ -4,7 +4,7 @@ import IconPlus from '../../../../images/iconPlus.svg';
 import IconMinus from '../../../../images/iconMinus.svg';
 import IconPlusB from '../../../../images/iconPlusBig.svg'
 
-const ProductCard = ({ name }) => {
+export default function ProductCard({ name }) {
     const [count, setCount] = useState(0);
     
     const countIncrease = () => {
@@ -42,6 +42,4 @@ const ProductCard = ({ name }) => {
             </div>
         </div>
     );
-}
-
-export default ProductCard;
+};

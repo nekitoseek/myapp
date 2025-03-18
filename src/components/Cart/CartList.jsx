@@ -2,7 +2,7 @@ import React from "react";
 import './CartList.css';
 import Card from './Cards/Cards';
 
-const CartList = () => {
+export default function CartList() {
     return(
         <>
         <div className="cards-column">
@@ -13,5 +13,3 @@ const CartList = () => {
         </>
     );
 };
-
-export default CartList;

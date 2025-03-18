@@ -1,7 +1,7 @@
 import React from "react";
 import './CategoryBtn.css';
 
-const CategoryBtn = ({ categoryName, isActive, onClick }) => {
+export default function CategoryBtn({ categoryName, isActive, onClick }) {
     return(
         <>
         <button 
@@ -13,5 +13,3 @@ const CategoryBtn = ({ categoryName, isActive, onClick }) => {
         </>
     );
 };
-
-export default CategoryBtn;
