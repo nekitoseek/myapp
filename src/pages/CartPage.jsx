@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import './CartPage.css';
 import BackBtn from "../components/Cart/BackBtn/BackBtn";
 import CartTableProfile from '../components/Cart/TableProfile/CartTableProfile';
@@ -16,14 +15,14 @@ export default function CartPage() {
     }
     return(
         <>
-        <div className="back-and-profile">
+        <div className="cartheader">
             <BackBtn />
             <CartTableProfile />
         </div>
-        <div className="list-products">
+        <div className="cartproducts">
             <CartList />
         </div>
-        <div className="btnincart">
+        <div className="cartorder">
             <BuyBtn onClick={handleOrder}/>
         </div>
         <OrderNotification isVisible={isNotificationVisible}/>

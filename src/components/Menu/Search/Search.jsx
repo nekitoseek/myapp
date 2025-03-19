@@ -5,9 +5,9 @@ import './Search.css';
 export default function Search() {
     return(
         <>
-        <div className="search">
-            <img src={searchIcon} className="search-icn" />
-            <input placeholder="Поиск" className="search-ipt" />
+        <div className="menu-search">
+            <img src={searchIcon} className="menu-search__icon" />
+            <input placeholder="Поиск" className="menu-search__input" />
         </div>
         </>
     );

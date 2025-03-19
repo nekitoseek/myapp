@@ -1,11 +1,11 @@
-.buy-btn {
+.cartorder__buy-btn {
     width: 372px;
     height: 64px;
     border-radius: 12px;
     background-color: #364C84;
 }
 
-.buy-btn-text {
+.cartorder__buy-btn-text {
     color: #F3F3F3;
     font-size: 32px;
     font-weight: 400;

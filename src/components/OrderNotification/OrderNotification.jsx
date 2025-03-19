@@ -7,11 +7,11 @@ export default function OrderNotification({ isVisible }) {
 
     return(
         <>
-        <div className="overlay">
-            <div className="modalwindow">
+        <div className="notification__overlay">
+            <div className="notification__modalwindow">
                 <div>
                     <span>Ваш заказ принят в работу!</span>
-                    <div className="checkmark">
+                    <div className="notification__modalwindow__checkmark">
                         <img src={Checkmark} />
                     </div>
                 </div>

@@ -7,7 +7,7 @@ export default function Categories() {
     const categories = ["Все", "Кофе", "Чай", "Газ. напитки", "Коктейли", "Алкоголь"];
     return(
         <>
-        <div className="categories">
+        <div className="menu-categories">
             {categories.map((category) => (
                 <CategoryBtn 
                     key={category}

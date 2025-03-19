@@ -1,4 +1,4 @@
-.overlay {
+.notification__overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@
     z-index: 1000;
 }
 
-.modalwindow {
+.notification__modalwindow {
     background-color: #FFFFFF;
     border: 2px;
     border-color: #B8B8B89E;
@@ -25,13 +25,13 @@
     margin-top: 200px;
 }
 
-.modalwindow span {
+.notification__modalwindow span {
     font-size: 16px;
     color: #333;
     margin-bottom: 16px;
 }
 
-.checkmark {
+.notification__modalwindow__checkmark {
     width: 200px;
     border-radius: 50%;
     display: flex;

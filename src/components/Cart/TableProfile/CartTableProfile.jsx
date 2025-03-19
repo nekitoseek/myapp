@@ -5,10 +5,10 @@ import UserIcon from '../../../images/UserIcon.svg';
 export default function CartTableProfile() {
     return(
         <>
-        <button className="TP-btn">
-            <div className="tableProfile-text">Столик 7</div>
-            <div className="tableProfile-icon">
-                <img src={UserIcon} className="tableProfile-icon-img"/>
+        <button className="cartheader__profile-btn">
+            <div className="cartheader__profile-text">Столик 7</div>
+            <div className="cartheader__profile-icon">
+                <img src={UserIcon} className="cartheader__profile-icon-img"/>
             </div>
         </button>
         </>

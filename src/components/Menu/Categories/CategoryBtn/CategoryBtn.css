@@ -1,4 +1,4 @@
-.category-btn {
+.menu-categories__btn {
     flex: 0 0 auto;
     width: auto;
     min-width: 99px;
@@ -10,18 +10,13 @@
     transition: all 0.3s ease;
 }
 
-.category-btn.active {
+.menu-categories__btn.active {
     background-color: #364C84;
     color: #FFFFFF;
     font-weight: bold;
 }
 
-/* .category-btn:hover {
-    background-color: #364c84a2;
-    color: white;
-} */
-
-.category-name {
+.menu-categories__name {
     font-size: 14px;
     padding: auto;
 }

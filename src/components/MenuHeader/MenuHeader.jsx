@@ -7,8 +7,8 @@ import CartButton from "./CartButton/CartButton";
 export default function MenuHeader() {
     return(
         <>
-        <div className="fullheader">
-            <div className="header-container">
+        <div className="menuheader">
+            <div className="menuheader-container">
                 <TableProfile tableNumber='7' />
                 <Link to='/cart'>
                     <CartButton />

@@ -1,15 +1,15 @@
 import React from "react";
 import './TableProfile.css';
-import UserIcon from '../../../images/UserIcon.svg'
+import UserIcon from "../../../images/UserIcon.svg";
 
 export default function TableProfile({ tableNumber }) {
     return (
         <>
-        <button className="table-btn shadow-xl">
-            <div className="tableProfile-icon">
-                <img src={UserIcon} className="tableProfile-icon-img"/>
+        <button className="menuheader__profile-btn shadow-xl">
+            <div className="menuheader__profile-icon">
+                <img src={UserIcon} className="menuheader__profile-icon-img"/>
             </div>
-            <div className="tableProfile-text">
+            <div className="menuheader__profile-text">
                     столик {tableNumber}
             </div>
         </button>

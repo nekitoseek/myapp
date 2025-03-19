@@ -5,7 +5,7 @@ import Card from './Cards/Cards';
 export default function CartList() {
     return(
         <>
-        <div className="cards-column">
+        <div className="cartproducts-container">
             <Card />
             <Card />
             <Card />

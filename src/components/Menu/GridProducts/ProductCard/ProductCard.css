@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.card {
+.menuproducts-container__card {
     width: 176px;
     height: 214px;
     background-color: #FFFFFF;
@@ -8,7 +8,14 @@
     padding: 8px;
 }
 
-.card-dscrptn {
+.card__placeforimg {
+    background-color: #E5E7EB;
+    border-radius: 12px;
+    width: 160px;
+    height: 155px;
+}
+
+.card__description {
     width: 160px;
     height: 31px;
     display: flex;
@@ -16,19 +23,26 @@
     margin-top: 12px;
 }
 
-.card-name {
+.card__name {
     font-size: 16px;
 
 }
 
-.placeforimg {
-    background-color: #E5E7EB;
-    border-radius: 12px;
-    width: 160px;
-    height: 155px;
+.card__plus-btn {
+    background-color: #364C84;
+    border-radius: 20px;
+    width: 31px;
+    height: 31px;
+
 }
 
-.kol-panel {
+.card__plus-img {
+    width: 17px;
+    height: 17px;
+    margin: auto;
+}
+
+.card__kol-panel {
     width: 71px;
     height: 29px;
     display: flex;
@@ -37,35 +51,17 @@
     border-radius: 22.58px;
 }
 
-.zero-kol {
-
-}
-
-.plus-btn {
-    background-color: #364C84;
-    border-radius: 20px;
-    width: 31px;
-    height: 31px;
-
-}
-
-.plus-img {
-    width: 17px;
-    height: 17px;
+.card__count {
     margin: auto;
 }
 
-.count {
-    margin: auto;
-}
-
-.plus-minus-img {
+.card__plus-minus--img {
     margin: auto;
     width: 10px;
     height: 10px;
 }
 
-.plus-minus-btn {
+.card__plus-minus--btn {
     margin: auto;
     width: 20px;
     height: 20px;

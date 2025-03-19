@@ -18,23 +18,23 @@ export default function ProductCard({ name }) {
     };
     
     return(
-        <div className="card">
-            <div className="placeforimg"></div>
-            <div className="card-dscrptn">
-                <div className="card-name">{name}</div>
+        <div className="menuproducts-container__card">
+            <div className="card__placeforimg"></div>
+            <div className="card__description">
+                <div className="card__name">{name}</div>
                 <div>
                     {count === 0 ? (
-                        <button onClick={countIncrease} className="plus-btn" >
-                            <img src={IconPlusB} className="plus-img" />
+                        <button onClick={countIncrease} className="card__plus-btn" >
+                            <img src={IconPlusB} className="card__plus-img" />
                         </button>
                     ) : (
-                        <div className="kol-panel">
-                            <button onClick={countDecrease} className="plus-minus-btn" >
-                                <img src={IconMinus} className="plus-minus-img" />
+                        <div className="card__kol-panel">
+                            <button onClick={countDecrease} className="card__plus-minus--btn" >
+                                <img src={IconMinus} className="card__plus-minus--img" />
                             </button>
-                            <div className="count">{count}</div>
-                            <button onClick={countIncrease} className="plus-minus-btn" >
-                                <img src={IconPlus} className="plus-minus-img" />
+                            <div className="card__count">{count}</div>
+                            <button onClick={countIncrease} className="card__plus-minus--btn" >
+                                <img src={IconPlus} className="card__plus-minus--img" />
                             </button>
                         </div>
                     )}

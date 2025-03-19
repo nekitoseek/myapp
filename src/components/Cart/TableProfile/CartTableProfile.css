@@ -1,7 +1,28 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 
-.tableProfile-icon {
+.cartheader__profile-btn {
+    display: flex;
+    width: 145px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    color: #202226;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartheader__profile-text {
+    width: auto;
+    font-family: "Inder", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 24px;
+    margin-left: 6px;
+}
+
+.cartheader__profile-icon {
     display: flex;
     background-color: #9DB2CE;
     border-radius: 50%;
@@ -12,28 +33,7 @@
     justify-content: center;
 }
 
-.tableProfile-icon-img {
+.cartheader__profile-icon-img {
     width: 24px;
     height: 24px;
-}
-
-.tableProfile-text {
-    width: auto;
-    font-family: "Inder", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: 24px;
-    margin-left: 6px;
-}
-
-.TP-btn {
-    display: flex;
-    width: 145px;
-    height: 48px;
-    border-radius: 50px;
-    background-color: #FFFFFF;
-    color: #202226;
-    font-size: 16px;
-    align-items: center;
-    justify-content: space-between;
 }

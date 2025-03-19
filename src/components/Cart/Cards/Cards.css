@@ -1,4 +1,4 @@
-.cardincart {
+.cartproducts__card {
     width: 346px;
     height: 120px;
     background-color: #FFFFFF;
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.card-elements {
+.cartproducts__card__elements {
     width: 329px;
     height: 80px;
     display: flex;
@@ -16,14 +16,14 @@
     align-items: center;
 }
 
-.gray-sqare {
+.__element--gray-bg {
     width: 84px;
     height: 80px;
     border-radius: 10px;
     background-color: #E5E7EB;
 }
 
-.card-name-and-description {
+.__element__name-and-dscrptn {
     width: 142px;
     height: 41px;
 }

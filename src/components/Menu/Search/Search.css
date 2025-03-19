@@ -1,23 +1,23 @@
-.search {
+.menu-search {
     position: relative;
     width: 372px;
     height: 59px;
     margin-bottom: 18px;
 }
 
-.search-ipt {
+.menu-search__icon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 13px;
+    height: 13px;
+}
+
+.menu-search__input {
     width: 372px;
     height: 59px;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding-left: 40px;
     font-weight: 400;
-}
-
-.search-icn {
-    position: absolute;
-    top: 22px;
-    left: 20px;
-    width: 13px;
-    height: 13px;
 }

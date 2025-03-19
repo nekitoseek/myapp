@@ -5,7 +5,7 @@ import './Products.css'
 export default function Products() {
     return(
         <>
-        <div className="products-container">
+        <div className="menuproducts-container">
             <ProductCard name='Латте' />
             <ProductCard name='Капучино' />
             <ProductCard name='Американо' />

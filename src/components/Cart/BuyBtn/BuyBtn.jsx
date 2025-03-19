@@ -4,8 +4,8 @@ import './BuyBtn.css';
 export default function BuyBtn( {onClick} ) {
     return(
         <>
-        <button className="buy-btn" onClick={onClick}>
-            <span className="buy-btn-text">Заказать</span>
+        <button className="cartorder__buy-btn" onClick={onClick}>
+            <span className="cartorder__buy-btn-text">Заказать</span>
         </button>
         </>
     );

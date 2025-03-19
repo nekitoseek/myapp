@@ -5,8 +5,8 @@ import cartIcon from '../../../images/cartIcon.svg'
 export default function CartButton() {
     return(
         <>
-            <button className="cart-btn shadow-xl">
-                <img src={cartIcon} className="cart-icon-img" />
+            <button className="menuheader__cart-btn shadow-xl">
+                <img src={cartIcon} className="menuheader__cart-btn-img" />
             </button>
         </>
     );

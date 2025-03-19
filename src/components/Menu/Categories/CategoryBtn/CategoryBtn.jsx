@@ -5,10 +5,10 @@ export default function CategoryBtn({ categoryName, isActive, onClick }) {
     return(
         <>
         <button 
-            className={`category-btn shadow-xs ${isActive ? "active" : ""}`}
+            className={`menu-categories__btn shadow-xs ${isActive ? "active" : ""}`}
             onClick={onClick}
         >
-            <span className="category-name">{categoryName}</span>
+            <span className="menu-categories__name">{categoryName}</span>
         </button>
         </>
     );
