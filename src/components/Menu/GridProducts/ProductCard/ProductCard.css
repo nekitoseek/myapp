@@ -33,7 +33,7 @@
     border-radius: 20px;
     width: 31px;
     height: 31px;
-
+    cursor: pointer;
 }
 
 .card__plus-img {
@@ -55,16 +55,17 @@
     margin: auto;
 }
 
-.card__plus-minus--img {
-    margin: auto;
-    width: 10px;
-    height: 10px;
-}
-
 .card__plus-minus--btn {
     margin: auto;
     width: 20px;
     height: 20px;
     background-color: #FFFFFF;
     border-radius: 22.58px;
+    cursor: pointer;
+}
+
+.card__plus-minus--img {
+    margin: auto;
+    width: 10px;
+    height: 10px;
 }

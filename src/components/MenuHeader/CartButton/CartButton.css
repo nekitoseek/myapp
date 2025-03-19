@@ -6,6 +6,7 @@
     background-color: #9DB2CE;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .menuheader__cart-btn-img {
