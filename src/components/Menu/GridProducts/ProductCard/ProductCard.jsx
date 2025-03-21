@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ProductCard.css";
 import IconPlus from '../../../../images/iconPlus.svg';
 import IconMinus from '../../../../images/iconMinus.svg';
@@ -6,19 +6,7 @@ import IconPlusB from '../../../../images/iconPlusBig.svg'
 import { useCart } from "../../../../Context/CartContext";
 
 export default function ProductCard({ name }) {
-    // const [count, setCount] = useState(0);
-    
-    // const countIncrease = () => {
-    //     setCount(count + 1);
-    // };
-
-    // const countDecrease = () => {
-    //     if (count > 0) {
-    //         setCount(count - 1);
-    //     }
-    // };
-
-    const { cart, addTocart, removeFromCart } = useCart();
+    const { cart, addToCart, removeFromCart } = useCart();
     const count = cart[name] || 0;
     
     return(
@@ -28,7 +16,7 @@ export default function ProductCard({ name }) {
                 <div className="card__name">{name}</div>
                 <div>
                     {count === 0 ? (
-                        <button onClick={() => addTocart(name)} className="card__plus-btn" >
+                        <button onClick={() => addToCart(name)} className="card__plus-btn" >
                             <img src={IconPlusB} className="card__plus-img" />
                         </button>
                     ) : (
@@ -37,7 +25,7 @@ export default function ProductCard({ name }) {
                                 <img src={IconMinus} className="card__plus-minus--img" />
                             </button>
                             <div className="card__count">{count}</div>
-                            <button onClick={() => addTocart(name)} className="card__plus-minus--btn" >
+                            <button onClick={() => addToCart(name)} className="card__plus-minus--btn" >
                                 <img src={IconPlus} className="card__plus-minus--img" />
                             </button>
                         </div>
