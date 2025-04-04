@@ -9,6 +9,13 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
+    proxy: {
+      "/api": {
+        target: "http://109.196.98.4",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
     watch: {
       usePolling: true,
     },

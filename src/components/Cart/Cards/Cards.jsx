@@ -13,7 +13,7 @@ export default function Card({ name, count }) {
     <div className="cartproducts__card">
         <div className="cartproducts__card__elements">
             <div className="__element--gray-bg"></div>
-            <div class="__element__name-and-dscrptn">
+            <div className="__element__name-and-dscrptn">
                 {name}
             </div>
             <div className="card__kol-panel">
