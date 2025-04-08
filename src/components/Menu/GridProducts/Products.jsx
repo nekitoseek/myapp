@@ -3,12 +3,13 @@ import ProductCard from './ProductCard/ProductCard';
 import './Products.css'
 
 export default function Products() {
+    // инициализируем состояние продуктов как массив
     const [products, setProducts] = useState([]);
 
     useEffect ( () => {
         fetch('/api/products')
             .then((res) => res.json())
-            .then((data) => setProducts(data))
+            .then((data) => setProducts(data)) // полученные данные
             .catch((err) => console.error("Ошибка загрузки продуктов: ", err));
     }, []);
     return(
@@ -20,6 +21,7 @@ export default function Products() {
             <ProductCard name='Чай' />
             <ProductCard name='Coca-cola' />
             <ProductCard name='Pepsi' /> */}
+            {/* все наши полученные карточки */}
             {products.map((product) => (
                 <ProductCard key={product.ID} product={product} />
             ))}

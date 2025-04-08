@@ -2,8 +2,8 @@ import React from "react";
 import './OrderNotification.css';
 import Checkmark from '../../images/Checkmark.png';
 
-export default function OrderNotification({ isVisible }) {
-    if (!isVisible) return null;
+export default function OrderNotification({ isVisible }) { // пропс для контроля видимости компонента
+    if (!isVisible) return null; // не рендерим компонент если =false
 
     return(
         <>

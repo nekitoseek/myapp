@@ -6,8 +6,8 @@ import Menu from '../components/Menu/Menu';
 export default function MenuPage() {
   return (
     <>
-    <MenuHeader />
-    <Menu />
+    <MenuHeader /> {/* шапка меню */}
+    <Menu /> {/* само меню */}
     </>
   )
 };

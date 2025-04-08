@@ -5,10 +5,10 @@ import IconMinus from '../../../../images/iconMinus.svg';
 import IconPlusB from '../../../../images/iconPlusBig.svg'
 import { useCart } from "../../../../Context/CartContext";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product }) { // product как пропс
     const { Name, Image, Description, Count } = product;
-    const { cart, addToCart, removeFromCart } = useCart();
-    const count = cart[Name] || 0;
+    const { cart, addToCart, removeFromCart } = useCart(); // извлечение из контекста
+    const count = cart[Name] || 0; // количество товара в корзине
     
     return (
         <div className="menuproducts-container__card">

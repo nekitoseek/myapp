@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './OrderModal.css';
 import { useCart } from '../../Context/CartContext';
-import { useEffect, useState as useReactState } from 'react';
 
 export default function OrderModal({ isOpen, onClose, onSuccess }) {
     const [fio, setFio] = useState("");
     const [phone, setPhone] = useState("");
     const { cart } = useCart();
-    const [products, setProducts] = useReactState([]);
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         fetch("/api/products")
@@ -16,11 +15,11 @@ export default function OrderModal({ isOpen, onClose, onSuccess }) {
             .catch((err) => console.error("Ошибка загрузки продуктов: ", err));
     }, []);
 
-    const handleSubmit = async () => {
-        // Сопоставление имени продукта и его ID
+    const handleSubmit = async () => { // обработчик отправки формы
+        // сопоставляем имя продукта и его ID
         const orders = Object.entries(cart).map(([name, count]) => {
-            const matchedProduct = products.find(p => p.Name === name);
-            if (!matchedProduct) return null;
+            const matchedProduct = products.find(p => p.Name === name); // ищем продукт по имени
+            if (!matchedProduct) return null; // если не найден
 
             return {
                 count,
@@ -28,10 +27,10 @@ export default function OrderModal({ isOpen, onClose, onSuccess }) {
                 phone,
                 product_id: matchedProduct.ID,
             };
-        }).filter(Boolean); // убрать null
+        });
 
         try {
-            for (const order of orders) {
+            for (const order of orders) { // для каждого заказа отправляем запрос на бэк
 
                 console.log("отправляем заказ", order)
 
@@ -58,7 +57,7 @@ export default function OrderModal({ isOpen, onClose, onSuccess }) {
         }
     };
 
-    if (!isOpen) return null;
+    if (!isOpen) return null; // не рендерим если не открыто МО
 
     return (
         <div className="ordermodal__overlay">
@@ -68,14 +67,14 @@ export default function OrderModal({ isOpen, onClose, onSuccess }) {
                     type="text"
                     placeholder="ФИО"
                     value={fio}
-                    onChange={(e) => setFio(e.target.value)}
+                    onChange={(e) => setFio(e.target.value)} // обновление состояния при вводе
                     className="ordermodal__input"
                 />
                 <input
                     type="tel"
                     placeholder="Телефон"
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={(e) => setPhone(e.target.value)} // обновление состояния при вводе
                     className="ordermodal__input"
                 />
                 <div className="ordermodal__buttons">
