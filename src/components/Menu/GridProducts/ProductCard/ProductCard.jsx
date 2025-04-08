@@ -16,7 +16,10 @@ export default function ProductCard({ product }) {
                 <img src={Image} alt={Name} />
             </div>
             <div className="card__description">
-                <div className="card__name">{Name}, {Description}, {Count}</div>
+                <div className="card__name">{Name}
+                    {/* {Description} */}
+                    {/* {Count} */}
+                    </div>
                 <div>
                     {count === 0 ? (
                         <button onClick={() => addToCart(Name)} className="card__plus-btn" >

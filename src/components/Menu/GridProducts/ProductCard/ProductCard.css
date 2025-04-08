@@ -2,7 +2,7 @@
 
 .menuproducts-container__card {
     width: 176px;
-    height: 214px;
+    height: 225px; /* 214 */
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 8px;
