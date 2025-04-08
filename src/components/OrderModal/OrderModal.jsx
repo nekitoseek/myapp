@@ -1,28 +1,54 @@
 import React, { useState } from 'react';
 import './OrderModal.css';
+import { useCart } from '../../Context/CartContext';
+import { useEffect, useState as useReactState } from 'react';
 
-export default function OrderModal({ isOpen, onClose, onSuccess, count, productId }) {
+export default function OrderModal({ isOpen, onClose, onSuccess }) {
     const [fio, setFio] = useState("");
     const [phone, setPhone] = useState("");
+    const { cart } = useCart();
+    const [products, setProducts] = useReactState([]);
+
+    useEffect(() => {
+        fetch("/api/products")
+            .then((res) => res.json())
+            .then((data) => setProducts(data))
+            .catch((err) => console.error("Ошибка загрузки продуктов: ", err));
+    }, []);
 
     const handleSubmit = async () => {
-        const order = {
-            count,
-            fio,
-            phone,
-            productId: productId,
-        };
-        console.log(order)
-        try {
-            const response = await fetch("api/zakaz", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(order),
-            });
+        // Сопоставление имени продукта и его ID
+        const orders = Object.entries(cart).map(([name, count]) => {
+            const matchedProduct = products.find(p => p.Name === name);
+            if (!matchedProduct) return null;
 
-            if (!response.ok) throw new Error("Ошибка при заказе");
+            return {
+                count,
+                fio,
+                phone,
+                product_id: matchedProduct.ID,
+            };
+        }).filter(Boolean); // убрать null
+
+        try {
+            for (const order of orders) {
+
+                console.log("отправляем заказ", order)
+
+                const response = await fetch("/api/zakaz", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(order),
+                });
+
+                const responseData = await response.text();
+
+                console.log("ответ сервера:", response.status, responseData);
+
+                if (!response.ok) throw new Error("Ошибка при заказе");
+            }
 
             onClose();
             onSuccess();
@@ -31,10 +57,10 @@ export default function OrderModal({ isOpen, onClose, onSuccess, count, productI
             alert("Ошибка при отправке заказа");
         }
     };
+
     if (!isOpen) return null;
 
     return (
-        <>
         <div className="ordermodal__overlay">
             <div className="ordermodal__window">
                 <h2>Оформить заказ</h2>
@@ -58,6 +84,5 @@ export default function OrderModal({ isOpen, onClose, onSuccess, count, productI
                 </div>
             </div>
         </div>
-        </>
-    )
+    );
 }
